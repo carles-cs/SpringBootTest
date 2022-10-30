@@ -9,6 +9,9 @@ import org.springframework.web.bind.annotation.RestController;
 public class ValuesController {
     @GetMapping("/people")
     public Person[] getPeople(){
-        return new Person[]{new Person("Carles","Company")};
+        return new Person[]{
+            new Person("Carles","Company Soler"),
+            new Person("Test1", "Test2")
+        };
     }
 }
