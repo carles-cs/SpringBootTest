@@ -5,7 +5,8 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
-@Controller("/")
+@Controller
+@RequestMapping("/")
 public class HomeController {
     @RequestMapping("/")
     public String Home(Model model,@RequestParam(name = "name",defaultValue = "world")String name){
