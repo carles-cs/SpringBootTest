@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-
 <html xmlns:th="http://www.thymeleaf.org">
 
 <head>
@@ -13,6 +12,13 @@
   <header class="header">
     <h1>Test Spring Boot</h1>
   </header>
+  <nav>
+    <ul>
+      <li><a href="/">Home</a></li>
+      <li class="spacer"></li>
+      <li>Other</li>
+    </ul>
+  </nav>
   <div class="main">
     <p>Hello <span th:text="${name}">Nom</span>!</p>
   </div>
