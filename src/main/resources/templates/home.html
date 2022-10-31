@@ -2,19 +2,19 @@
 
 <html xmlns:th="http://www.thymeleaf.org">
 
-  <head>
-    <title>Test Spring Boot</title>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <link rel="stylesheet" type="text/css" media="all" 
-          href="../../css/main.css" th:href="@{/css/main.css}" />
-  </head>
+<head>
+  <title>Test Spring Boot</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <link rel="stylesheet" type="text/css" media="all" href="../../css/main.css" th:href="@{/css/main.css}" />
+</head>
 
-  <body>
-    <div class="header">
-        <h1>Test Spring Boot</h1>
-    </div>
+<body>
+  <header class="header">
+    <h1>Test Spring Boot</h1>
+  </header>
+  <div class="main">
     <p>Hello <span th:text="${name}">Nom</span>!</p>
-  
-  </body>
+  </div>
+</body>
 
 </html>
