@@ -11,7 +11,8 @@ public class ValuesController {
     public Person[] getPeople(){
         return new Person[]{
             new Person("Carles","Company Soler"),
-            new Person("Test1", "Test2")
+            new Person("Test1", "Test2"),
+            new Person("Test2", "Test3")
         };
     }
 }
