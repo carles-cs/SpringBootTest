@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-
 <html xmlns:th="http://www.thymeleaf.org">
 
 <head>
   <title>Test Spring Boot</title>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" type="text/css" media="all" href="../../css/main.css" th:href="@{/css/main.css}" />
 </head>
 
@@ -12,6 +12,13 @@
   <header class="header">
     <h1>Test Spring Boot</h1>
   </header>
+  <nav>
+    <ul>
+      <li><a href="/">Home</a></li>
+      <li class="spacer"></li>
+      <li>Other</li>
+    </ul>
+  </nav>
   <div class="main">
     <p>Hello <span th:text="${name}">Nom</span>!</p>
   </div>
