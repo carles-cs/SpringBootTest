@@ -20,7 +20,6 @@ public class HomeController {
         } else {
             model.addAttribute("name", name);
         }
-        model.addAttribute("loggedin", oAuth2User!=null);
         return "home";
     }
 }
