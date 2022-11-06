@@ -66,3 +66,9 @@ a{
     text-decoration: none;
     color: black;
 }
+
+input[type=submit]{
+    border: none;
+    background-color: transparent;
+    font-size: 12px;
+}

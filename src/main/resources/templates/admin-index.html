@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html xmlns:th="http://www.thymeleaf.org">
+<html xmlns:th="http://www.thymeleaf.org" xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
 
 <head>
   <title>Test Spring Boot</title>
@@ -10,7 +10,7 @@
 
 <body>
   <header class="header">
-    <h1>Test Spring Boot</h1>
+    <h1>Admin</h1>
   </header>
   <nav>
     <ul>
@@ -28,7 +28,7 @@
     </ul>
   </nav>
   <div class="main">
-    <p>Hello <span th:text="${name}">Nom</span>!</p>
+    <p>Admin <span sec:authentication="principal.firstName"></span>!</p>
   </div>
 </body>
 
